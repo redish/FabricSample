@@ -14,6 +14,10 @@
 		62CCC2EB1D1818D700D3D9F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62CCC2E91D1818D700D3D9F9 /* LaunchScreen.storyboard */; };
 		62CCC2F61D1818D700D3D9F9 /* FabricSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CCC2F51D1818D700D3D9F9 /* FabricSampleTests.swift */; };
 		62CCC3011D1818D700D3D9F9 /* FabricSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CCC3001D1818D700D3D9F9 /* FabricSampleUITests.swift */; };
+		62CCC3131D181A3A00D3D9F9 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62CCC30F1D181A3A00D3D9F9 /* Fabric.framework */; };
+		62CCC3141D181A3A00D3D9F9 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62CCC3101D181A3A00D3D9F9 /* TwitterKit.framework */; };
+		62CCC3151D181A3A00D3D9F9 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 62CCC3111D181A3A00D3D9F9 /* TwitterKitResources.bundle */; };
+		62CCC3161D181A3A00D3D9F9 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62CCC3121D181A3A00D3D9F9 /* TwitterCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		62CCC2FC1D1818D700D3D9F9 /* FabricSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FabricSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		62CCC3001D1818D700D3D9F9 /* FabricSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabricSampleUITests.swift; sourceTree = "<group>"; };
 		62CCC3021D1818D700D3D9F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62CCC30F1D181A3A00D3D9F9 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		62CCC3101D181A3A00D3D9F9 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		62CCC3111D181A3A00D3D9F9 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TwitterKitResources.bundle; sourceTree = "<group>"; };
+		62CCC3121D181A3A00D3D9F9 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62CCC3131D181A3A00D3D9F9 /* Fabric.framework in Frameworks */,
+				62CCC3161D181A3A00D3D9F9 /* TwitterCore.framework in Frameworks */,
+				62CCC3141D181A3A00D3D9F9 /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +108,10 @@
 		62CCC2DF1D1818D700D3D9F9 /* FabricSample */ = {
 			isa = PBXGroup;
 			children = (
+				62CCC30F1D181A3A00D3D9F9 /* Fabric.framework */,
+				62CCC3101D181A3A00D3D9F9 /* TwitterKit.framework */,
+				62CCC3111D181A3A00D3D9F9 /* TwitterKitResources.bundle */,
+				62CCC3121D181A3A00D3D9F9 /* TwitterCore.framework */,
 				62CCC2E01D1818D700D3D9F9 /* AppDelegate.swift */,
 				62CCC2E21D1818D700D3D9F9 /* ViewController.swift */,
 				62CCC2E41D1818D700D3D9F9 /* Main.storyboard */,
@@ -135,6 +150,7 @@
 				62CCC2D91D1818D700D3D9F9 /* Sources */,
 				62CCC2DA1D1818D700D3D9F9 /* Frameworks */,
 				62CCC2DB1D1818D700D3D9F9 /* Resources */,
+				62CCC30E1D1819E100D3D9F9 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -232,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62CCC3151D181A3A00D3D9F9 /* TwitterKitResources.bundle in Resources */,
 				62CCC2EB1D1818D700D3D9F9 /* LaunchScreen.storyboard in Resources */,
 				62CCC2E81D1818D700D3D9F9 /* Assets.xcassets in Resources */,
 				62CCC2E61D1818D700D3D9F9 /* Main.storyboard in Resources */,
@@ -253,6 +270,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		62CCC30E1D1819E100D3D9F9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 470f7f3c5b7084de91aa08d195f0e89275bdf1d2 5954d573541c14f19a479599d5a7abcf8f342e514a0e92c510e45d6cdec47b04";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		62CCC2D91D1818D700D3D9F9 /* Sources */ = {
@@ -402,6 +435,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FabricSample",
+				);
 				INFOPLIST_FILE = FabricSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.redish.FabricSample;
@@ -413,6 +450,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FabricSample",
+				);
 				INFOPLIST_FILE = FabricSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.redish.FabricSample;
