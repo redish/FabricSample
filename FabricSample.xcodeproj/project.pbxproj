@@ -216,7 +216,7 @@
 				TargetAttributes = {
 					62CCC2DC1D1818D700D3D9F9 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 3X58U95VJ6;
+						DevelopmentTeam = 92JFLGF93E;
 					};
 					62CCC2F01D1818D700D3D9F9 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -540,6 +540,7 @@
 				62CCC3071D1818D700D3D9F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		62CCC3081D1818D700D3D9F9 /* Build configuration list for PBXNativeTarget "FabricSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -548,6 +549,7 @@
 				62CCC30A1D1818D700D3D9F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		62CCC30B1D1818D700D3D9F9 /* Build configuration list for PBXNativeTarget "FabricSampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -556,6 +558,7 @@
 				62CCC30D1D1818D700D3D9F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
