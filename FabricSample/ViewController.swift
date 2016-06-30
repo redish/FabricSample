@@ -19,9 +19,15 @@ class ViewController: UIViewController {
             if (session != nil) {
                 // TODO: associate the session userID with your user model
                 let message = "Phone number: \(session!.phoneNumber)"
+                NSLog("User Id: \(session!.userID)")
                 let alertController = UIAlertController(title: "You are logged in!", message: message, preferredStyle: .Alert)
                 alertController.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: .None))
                 self.presentViewController(alertController, animated: true, completion: .None)
+                let digits = Digits.sharedInstance()
+                let oauthSigning = DGTOAuthSigning(authConfig:digits.authConfig, authSession:digits.session())
+                let authHeaders: NSDictionary = oauthSigning.OAuthEchoHeadersToVerifyCredentials()
+                print(authHeaders.objectForKey("X-Auth-Service-Provider"))
+                print(authHeaders.objectForKey("X-Verify-Credentials-Authorization"))
             } else {
                 NSLog("Authentication error: %@", error!.localizedDescription)
             }
